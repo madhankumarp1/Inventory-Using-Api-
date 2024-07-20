@@ -1,0 +1,522 @@
+body {
+  display: contents;
+  background: #f1f1f1;
+  height: 100%;
+  width: 100%;
+}
+section.heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid gray;
+}
+.div_head_main {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+}
+
+/* card sesstion  */
+
+section.card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: gainsboro;
+  height: 20em;
+}
+.div_card_heading {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 4em;
+}
+
+.div_card_main {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  align-items: center;
+  gap: 4em;
+  height: 10em;
+}
+
+.div_card_left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.div_card_middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.div_card_right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.div_card_item {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.div_card_left,
+.div_card_middle,
+.div_card_right {
+  width: 100%;
+  height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div_card_left {
+  border-radius: 2px;
+  border-left: 8px solid rgb(18, 18, 202);
+}
+
+.div_card_middle {
+  border-radius: 2px;
+  border-left: 8px solid rgb(221, 221, 16);
+}
+
+.div_card_right {
+  border-radius: 2px;
+  border-left: 8px solid green;
+}
+
+/* button Div  */
+
+.div_card_two_btn {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+button {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+cursor: pointer;
+border-radius: 5px;
+}
+.Update {
+  background-color: rgb(0, 183, 255);
+}
+.Add {
+  background-color: rgb(51, 255, 0);
+}
+
+.Update:hover{
+    background-color: rgb(0, 95, 204);
+    color: white;
+}
+.Add:hover{
+    background-color: rgb(0, 166, 64);
+    color: white;
+}
+
+
+/* from  */
+
+.hi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    background-color: aqua;
+}
+
+div#addProductModal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.close {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+form#addProductForm {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2em;
+}
+.div_name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.div_quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.div_add_submit_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.modal-content {
+    padding: 1em;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    border-radius: 8px;
+}
+.modal-content h2 {
+    text-align: center;
+}
+#addProductModal{
+    display: none;
+}
+
+
+.hi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    background-color: #0000005c;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+}
+
+/* add Product btn   */
+
+
+#addbutton{
+    background-color: rgb(0, 183, 255);
+
+}
+#addbutton:hover{
+    background-color: rgb(0, 95, 204);
+    color: white;
+}
+
+
+
+/* updata from  */
+
+.hi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+
+div#updateProductModal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.close {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: x-large;
+}
+
+form#updateProductForm {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.div_name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.div_quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.div_add_submit_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-content {
+    padding: 1em;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+#updateProductModal {
+    display: none;
+}
+
+#updateButton {
+    background-color: rgb(0, 183, 255);
+}
+
+#updateButton:hover {
+    background-color: rgb(0, 95, 204);
+    color: white;
+}
+
+.div_Recipient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+
+
+
+/* bar chart  */
+
+
+section#Chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: gainsboro;
+    height: 100vh;
+}
+.div_chart_main {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background: white;
+    flex-direction: column;
+    padding: 75px 0px;    border-radius: 2px;
+}
+
+
+
+/* table style  and div*/
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+    border: 3px solid #bfbfbf;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {
+    background-color: #ddfd51;
+  cursor: pointer;
+  }
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #262727d8;
+    color: white;
+  }
+
+
+  /* table div  */
+
+
+  section.table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gainsboro;
+}
+.div_table {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+/* icon  */
+
+
+i.fa-solid.fa-face-laugh-wink {
+    color: rgb(18, 18, 202);
+    font-size: xx-large;
+}
+i.fa-solid.fa-face-meh {
+    color: rgb(235, 235, 13);
+    font-size: xx-large;
+}
+
+i.fa-solid.fa-face-meh-blank {
+    font-size: xx-large;
+    color:  green;
+}
+
+
+/* input style */
+
+input[type=text],input[type=number] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  label {
+    font-size: medium;
+}
+
+/* font style add  */
+
+
+.div_chart_name h1{
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      font-size: x-large;
+}
+
+.div_head_main h1 span {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+.div_card_heading h1 {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+h2.name,p.quantity {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+th {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+td {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+button {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+
+
+/* mobile view */
+
+@media only screen and (max-width: 500px) {
+
+section.card {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 1em;
+}
+
+.div_card_main {
+  flex-direction: column;
+  height: 100%;
+}
+.div_chart_main {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  flex-direction: column;
+  border-radius: 2px;
+}
+.modal-content {
+  padding: 2em;
+}
+}

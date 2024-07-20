@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Dashboard Page</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="heading">
+      <div class="div_head_main">
+        <h1>
+          <i class="fa-solid fa-list-check"></i>
+          <span>Dckap palli Inventory </span>
+        </h1>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="div_card_heading">
+        <h1>Dashboard</h1>
+      </div>
+      <div class="div_card_main">
+        <div class="div_card_left">
+          <div class="div_card_item">
+            <h2 class="name">Product</h2>
+            <p class="quantity">00</p>
+          </div>
+          <div class="div_card_icon">
+            <i class="fa-solid fa-face-laugh-wink"></i>
+          </div>
+        </div>
+
+        <div class="div_card_middle">
+          <div class="div_card_item">
+            <h2 class="name">Product</h2>
+            <p class="quantity">00</p>
+          </div>
+          <div class="div_card_icon">
+            <i class="fa-solid fa-face-meh"></i>
+          </div>
+        </div>
+
+        <div class="div_card_right">
+          <div class="div_card_item">
+            <h2 class="name">Product</h2>
+            <p class="quantity">00</p>
+          </div>
+          <div class="div_card_icon">
+            <i class="fa-solid fa-face-meh-blank"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="div_card_two_btn">
+        <div class="div_btn_add">
+          <button class="Add">Add Product</button>
+        </div>
+        <div class="div_btn_updata">
+          <button class="Update">Update Inventory</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="addProductModal" class="modal hi">
+      <div id="addProductModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Add Product</h2>
+          <form id="addProductForm">
+            <div class="div_name">
+              <label for="productName">Product Name:</label>
+              <input type="text" id="productName" name="productName" required />
+            </div>
+            <div class="div_quantity">
+              <label for="productQuantity">Product Quantity:</label>
+              <input
+                type="number"
+                id="productQuantity"
+                name="productQuantity"
+                required
+              />
+            </div>
+            <div class="div_add_submit_btn">
+              <button type="submit" id="addbutton">Add Product</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="updateProductModal" class="modal hi">
+      <div id="updateProductModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="updataclose">&times;</span>
+          <h2>Update Inventory</h2>
+          <form id="updateProductForm">
+            <div class="div_name">
+              <label for="productName">Product Name:</label>
+              <input
+                type="text"
+                id="productName_updata"
+                name="productName"
+                required
+              />
+            </div>
+            <div class="div_quantity">
+              <label for="productQuantity">Product Quantity:</label>
+              <input
+                type="number"
+                id="productQuantity_updata"
+                name="productQuantity"
+                required
+              />
+            </div>
+            <div class="div_Recipient">
+              <label for="Recipient">Recipient:</label>
+              <input type="text" id="Recipient" name="Recipient" required />
+            </div>
+            <div class="div_add_submit_btn">
+              <button type="submit" id="updateButton">Update Product</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="Chart">
+      <div class="div_chart_main">
+        <div class="div_chart_name">
+          <h1>Inventory Status</h1>
+        </div>
+        <canvas id="productChart"></canvas>
+      </div>
+    </section>
+
+    <section class="table">
+      <div class="div_table">
+        <table id="customers">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Recipient</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="./javascript/Add_Inventory.js"></script>
+    <script src="./javascript/Add_Recipient.js"></script>
+    <script src="./javascript/Fetching_Inventory.js"></script>
+    <script src="./javascript/Fetching_Recipient.js"></script>
+    <script src="./javascript/Pop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
