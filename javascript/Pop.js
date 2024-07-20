@@ -1,5 +1,4 @@
 // it the  pop from 
-
 document.addEventListener('DOMContentLoaded', function () {
     let addProductBtn = document.querySelector('.Add');
     let addProductModal = document.getElementById('addProductModal');

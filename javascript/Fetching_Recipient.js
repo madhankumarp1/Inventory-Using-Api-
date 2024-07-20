@@ -1,3 +1,5 @@
+// it is the Recipient fetch
+
 document.addEventListener('DOMContentLoaded', function() {
     fetch('http://localhost/madhan_js/api/getRecipient.php')
         .then(response => response.json())
